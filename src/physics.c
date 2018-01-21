@@ -5,34 +5,37 @@
 #include <stdio.h>
 #include <time.h>
 
-Direction decideGhost(const Map* map, Ghost* ghost)
+Node 
+
+Direction decideBlinky(const Map* map, const Ghost* ghost, const Pacman* pacman)
 {
-	Direction dir;
-	int x, y;
-	do
+}
+
+Direction decidePinky(const Map* map, const Ghost* ghost, const Pacman* pacman)
+{
+}
+
+Direction decideInky(const Map* map, const Ghost* ghost, const Pacman* pacman, const Ghost* blinky)
+{
+}
+
+Direction decideClyde(const Map* map, const Ghost* ghost, const Pacman* pacman)
+{
+}
+
+Direction decideGhost(const Map* map, Ghost* ghost, Pacman* pacman, Ghost* blinky)
+{
+	switch (ghost->type)
 	{
-		x = ghost->x;
-		y = ghost->y;
-		dir = rand() % 4 + 1;
-		switch (dir)
-		{
-			case DIR_UP:
-				y--;
-				break;
-			case DIR_DOWN:
-				y++;
-				break;
-			case DIR_RIGHT:
-				x++;
-				break;
-			case DIR_LEFT:
-				x--;
-				break;
-		}
-		x = (x + map->width) % map->width;
-		y = (y + map->height) % map->height;
-	} while (map->cells[x][y] == CELL_BLOCK);	
-	return dir;
+		case BLINKY:
+			return decideBlinky(map, ghost, pacman);
+		case PINKY:
+			return decidePinky(map, ghost, pacman);
+		case INKY:
+			return decideInky(map, ghost, pacman, blinky);
+		case CLYDE:
+			return decideClyde(map, ghost, pacman);
+	}
 }
 
 Direction decidePacman(const Map* map, Pacman* pacman, Action action)

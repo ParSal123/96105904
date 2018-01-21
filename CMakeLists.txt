@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.8)
+project(Pacman)
+
+set(SOURCE src/physics.c src/game.c)
+add_executable(Pacman ${SOURCE})
+include_directories(src)
+add_library(lib STATIC IMPORTED)
+set_target_properties(lib PROPERTIES IMPORTED_LOCATION "../liblib.a")
+target_link_libraries(Pacman lib)
+target_link_libraries(Pacman m SDL2 SDL2_gfx)
+add_definitions(-D_REENTRANT)
