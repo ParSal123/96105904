@@ -1,3 +1,0 @@
-/home/parsa/Desktop/Programming/FOP96/Pacman/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/parsa/Desktop/Programming/FOP96/Pacman/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/parsa/Desktop/Programming/FOP96/Pacman/cmake-build-debug/CMakeFiles/Pacman.dir

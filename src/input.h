@@ -1,9 +1,11 @@
+
 #ifndef __INPUT_H
 #define __INPUT_H
 
 #define MOVE_ACTION_MASK 0b001110
 
-typedef enum {
+typedef enum
+{
     ACTION_LEFT = 0b001110,
     ACTION_RIGHT = 0b000110,
     ACTION_UP = 0b000010,
@@ -16,3 +18,4 @@ typedef enum {
 } Action;
 
 #endif
+

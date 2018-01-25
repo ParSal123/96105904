@@ -5,22 +5,24 @@
 #include <stdio.h>
 #include <time.h>
 
-Node 
-
 Direction decideBlinky(const Map* map, const Ghost* ghost, const Pacman* pacman)
 {
+	return DIR_NONE;
 }
 
 Direction decidePinky(const Map* map, const Ghost* ghost, const Pacman* pacman)
 {
+	return DIR_NONE;
 }
 
 Direction decideInky(const Map* map, const Ghost* ghost, const Pacman* pacman, const Ghost* blinky)
 {
+	return DIR_NONE;
 }
 
 Direction decideClyde(const Map* map, const Ghost* ghost, const Pacman* pacman)
 {
+	return DIR_NONE;
 }
 
 Direction decideGhost(const Map* map, Ghost* ghost, Pacman* pacman, Ghost* blinky)

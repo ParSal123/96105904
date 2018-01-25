@@ -3,26 +3,17 @@
 #define __GAME_H
 
 #include <stdbool.h>
+
 #include "map.h"
 
-typedef struct Node
-{
-	int x, y;
-	int par_x, par_y;
-	int dist;
-	Node ()
-	{
-		dist = 0;
-		par_x = par_y = -1;
-	}
-} Node;
-
-typedef enum { 
+typedef enum
+{ 
     DIR_UP = 1,
     DIR_RIGHT = 2,
     DIR_DOWN = 3,
     DIR_LEFT = 4,
-    DIR_NONE = -1 } Direction;
+    DIR_NONE = -1
+} Direction;
 
 typedef enum { BLINKY, PINKY, CLYDE, INKY } GhostType;
 
@@ -32,13 +23,15 @@ typedef enum { BLINKY, PINKY, CLYDE, INKY } GhostType;
 #define CHERRY_SCORE 100
 #define PINEAPPLE_SCORE 20
 
-typedef struct {
+typedef struct
+{
     int score;
     int cheeses, cherries, pineapples;
     int ghosts;
 } Game;
 
-typedef struct {
+typedef struct
+{
     double x, y;
     int startX, startY;
     Direction dir;
@@ -49,11 +42,14 @@ typedef struct {
 #define CYCLES_PER_SEC 60
 #define BLUE_DURATION 5 * CYCLES_PER_SEC
 
-typedef enum {
+typedef enum
+{
     CHASE = 1,
-    SCATTER = 2 } GhostState;
+    SCATTER = 2
+} GhostState;
 
-typedef struct {
+typedef struct
+{
     double x, y;
     int startX, startY;
     Direction dir;
@@ -66,17 +62,19 @@ typedef struct {
 } Ghost;
 
 // TO WRITE
-void initiateGame(char* filename, Map* outMap, Game* outGame, Pacman* outPacman, Ghost* outGhosts);
+void initiateGame(char*, Map*, Game*, Pacman*, Ghost*);
 
 // TO WRITE
-void checkEatables(Map* map, Game* outGame, Pacman* outPacman, Ghost* outGhosts);
+void checkEatables(Map*, Game*, Pacman*, Ghost*);
 
 // TO WRITE
-void checkGhostCollision(Pacman* outPacman, Ghost* outGhost);
+void checkGhostCollision(Pacman*, Ghost*);
 
 // TO WRITE
-bool isGameFinished(Game* game, Pacman* pacman);
+bool isGameFinished(Game*, Pacman*);
 
 // TO WRITE
-void checkGhostState(Ghost* ghost);
+void checkGhostState(Ghost*);
+
 #endif
+
