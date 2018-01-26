@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Pacman.dir/src/physics.c.o"
   "CMakeFiles/Pacman.dir/src/game.c.o"
-  "Pacman.pdb"
-  "Pacman"
+  "CMakeFiles/Pacman.dir/src/physics.c.o"
+  "../Pacman.pdb"
+  "../Pacman"
 )
 
 # Per-language clean rules from dependency scanning.

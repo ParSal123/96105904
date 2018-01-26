@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/parsa/Desktop/Programming/FOP96/Pacman
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parsa/Desktop/Programming/FOP96/Pacman
+CMAKE_BINARY_DIR = /home/parsa/Desktop/Programming/FOP96/Pacman/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Pacman.dir/depend.make
@@ -57,33 +57,9 @@ include CMakeFiles/Pacman.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Pacman.dir/flags.make
 
-CMakeFiles/Pacman.dir/src/physics.c.o: CMakeFiles/Pacman.dir/flags.make
-CMakeFiles/Pacman.dir/src/physics.c.o: src/physics.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parsa/Desktop/Programming/FOP96/Pacman/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Pacman.dir/src/physics.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Pacman.dir/src/physics.c.o   -c /home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.c
-
-CMakeFiles/Pacman.dir/src/physics.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Pacman.dir/src/physics.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.c > CMakeFiles/Pacman.dir/src/physics.c.i
-
-CMakeFiles/Pacman.dir/src/physics.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Pacman.dir/src/physics.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.c -o CMakeFiles/Pacman.dir/src/physics.c.s
-
-CMakeFiles/Pacman.dir/src/physics.c.o.requires:
-
-.PHONY : CMakeFiles/Pacman.dir/src/physics.c.o.requires
-
-CMakeFiles/Pacman.dir/src/physics.c.o.provides: CMakeFiles/Pacman.dir/src/physics.c.o.requires
-	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/src/physics.c.o.provides.build
-.PHONY : CMakeFiles/Pacman.dir/src/physics.c.o.provides
-
-CMakeFiles/Pacman.dir/src/physics.c.o.provides.build: CMakeFiles/Pacman.dir/src/physics.c.o
-
-
 CMakeFiles/Pacman.dir/src/game.c.o: CMakeFiles/Pacman.dir/flags.make
-CMakeFiles/Pacman.dir/src/game.c.o: src/game.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parsa/Desktop/Programming/FOP96/Pacman/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Pacman.dir/src/game.c.o"
+CMakeFiles/Pacman.dir/src/game.c.o: ../src/game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parsa/Desktop/Programming/FOP96/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Pacman.dir/src/game.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Pacman.dir/src/game.c.o   -c /home/parsa/Desktop/Programming/FOP96/Pacman/src/game.c
 
 CMakeFiles/Pacman.dir/src/game.c.i: cmake_force
@@ -105,29 +81,53 @@ CMakeFiles/Pacman.dir/src/game.c.o.provides: CMakeFiles/Pacman.dir/src/game.c.o.
 CMakeFiles/Pacman.dir/src/game.c.o.provides.build: CMakeFiles/Pacman.dir/src/game.c.o
 
 
+CMakeFiles/Pacman.dir/src/physics.c.o: CMakeFiles/Pacman.dir/flags.make
+CMakeFiles/Pacman.dir/src/physics.c.o: ../src/physics.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parsa/Desktop/Programming/FOP96/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Pacman.dir/src/physics.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Pacman.dir/src/physics.c.o   -c /home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.c
+
+CMakeFiles/Pacman.dir/src/physics.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Pacman.dir/src/physics.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.c > CMakeFiles/Pacman.dir/src/physics.c.i
+
+CMakeFiles/Pacman.dir/src/physics.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Pacman.dir/src/physics.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.c -o CMakeFiles/Pacman.dir/src/physics.c.s
+
+CMakeFiles/Pacman.dir/src/physics.c.o.requires:
+
+.PHONY : CMakeFiles/Pacman.dir/src/physics.c.o.requires
+
+CMakeFiles/Pacman.dir/src/physics.c.o.provides: CMakeFiles/Pacman.dir/src/physics.c.o.requires
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/src/physics.c.o.provides.build
+.PHONY : CMakeFiles/Pacman.dir/src/physics.c.o.provides
+
+CMakeFiles/Pacman.dir/src/physics.c.o.provides.build: CMakeFiles/Pacman.dir/src/physics.c.o
+
+
 # Object files for target Pacman
 Pacman_OBJECTS = \
-"CMakeFiles/Pacman.dir/src/physics.c.o" \
-"CMakeFiles/Pacman.dir/src/game.c.o"
+"CMakeFiles/Pacman.dir/src/game.c.o" \
+"CMakeFiles/Pacman.dir/src/physics.c.o"
 
 # External object files for target Pacman
 Pacman_EXTERNAL_OBJECTS =
 
-Pacman: CMakeFiles/Pacman.dir/src/physics.c.o
-Pacman: CMakeFiles/Pacman.dir/src/game.c.o
-Pacman: CMakeFiles/Pacman.dir/build.make
-Pacman: liblib.a
-Pacman: CMakeFiles/Pacman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/parsa/Desktop/Programming/FOP96/Pacman/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Pacman"
+../Pacman: CMakeFiles/Pacman.dir/src/game.c.o
+../Pacman: CMakeFiles/Pacman.dir/src/physics.c.o
+../Pacman: CMakeFiles/Pacman.dir/build.make
+../Pacman: ../lib/liblib.a
+../Pacman: CMakeFiles/Pacman.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/parsa/Desktop/Programming/FOP96/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable ../Pacman"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Pacman.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Pacman.dir/build: Pacman
+CMakeFiles/Pacman.dir/build: ../Pacman
 
 .PHONY : CMakeFiles/Pacman.dir/build
 
-CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/src/physics.c.o.requires
 CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/src/game.c.o.requires
+CMakeFiles/Pacman.dir/requires: CMakeFiles/Pacman.dir/src/physics.c.o.requires
 
 .PHONY : CMakeFiles/Pacman.dir/requires
 
@@ -136,6 +136,6 @@ CMakeFiles/Pacman.dir/clean:
 .PHONY : CMakeFiles/Pacman.dir/clean
 
 CMakeFiles/Pacman.dir/depend:
-	cd /home/parsa/Desktop/Programming/FOP96/Pacman && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parsa/Desktop/Programming/FOP96/Pacman /home/parsa/Desktop/Programming/FOP96/Pacman /home/parsa/Desktop/Programming/FOP96/Pacman /home/parsa/Desktop/Programming/FOP96/Pacman /home/parsa/Desktop/Programming/FOP96/Pacman/CMakeFiles/Pacman.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/parsa/Desktop/Programming/FOP96/Pacman/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parsa/Desktop/Programming/FOP96/Pacman /home/parsa/Desktop/Programming/FOP96/Pacman /home/parsa/Desktop/Programming/FOP96/Pacman/build /home/parsa/Desktop/Programming/FOP96/Pacman/build /home/parsa/Desktop/Programming/FOP96/Pacman/build/CMakeFiles/Pacman.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Pacman.dir/depend
 

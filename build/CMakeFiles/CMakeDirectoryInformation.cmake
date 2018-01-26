@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/parsa/Desktop/Programming/FOP96/Pacman")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/parsa/Desktop/Programming/FOP96/Pacman")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/parsa/Desktop/Programming/FOP96/Pacman/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

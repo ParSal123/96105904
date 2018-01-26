@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = -D_REENTRANT
 
-C_INCLUDES = -I/home/parsa/Desktop/Programming/FOP96/Pacman/src 
+C_INCLUDES = -I/home/parsa/Desktop/Programming/FOP96/Pacman/include 
 

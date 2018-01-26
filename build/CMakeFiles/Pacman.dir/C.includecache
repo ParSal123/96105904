@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+../include/game.h
+stdbool.h
+-
+map.h
+../include/map.h
+
+../include/input.h
+
+../include/map.h
+
+../include/physics.h
+input.h
+../include/input.h
+game.h
+../include/game.h
+
 /home/parsa/Desktop/Programming/FOP96/Pacman/src/game.c
 game.h
 /home/parsa/Desktop/Programming/FOP96/Pacman/src/game.h
@@ -22,16 +38,6 @@ stdlib.h
 time.h
 -
 
-/home/parsa/Desktop/Programming/FOP96/Pacman/src/game.h
-stdbool.h
--
-map.h
-/home/parsa/Desktop/Programming/FOP96/Pacman/src/map.h
-
-/home/parsa/Desktop/Programming/FOP96/Pacman/src/input.h
-
-/home/parsa/Desktop/Programming/FOP96/Pacman/src/map.h
-
 /home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.c
 input.h
 /home/parsa/Desktop/Programming/FOP96/Pacman/src/input.h
@@ -41,10 +47,4 @@ stdio.h
 -
 time.h
 -
-
-/home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.h
-input.h
-/home/parsa/Desktop/Programming/FOP96/Pacman/src/input.h
-game.h
-/home/parsa/Desktop/Programming/FOP96/Pacman/src/game.h
 

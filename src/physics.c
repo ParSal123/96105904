@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 
 Direction decideBlinky(const Map* map, const Ghost* ghost, const Pacman* pacman)
 {
@@ -25,7 +26,7 @@ Direction decideClyde(const Map* map, const Ghost* ghost, const Pacman* pacman)
 	return DIR_NONE;
 }
 
-Direction decideGhost(const Map* map, Ghost* ghost, Pacman* pacman, Ghost* blinky)
+Direction decideGhost(const Map* map, const Ghost* ghost, const Pacman* pacman, const Ghost* blinky)
 {
 	switch (ghost->type)
 	{

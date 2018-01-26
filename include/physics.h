@@ -9,10 +9,10 @@
 #define GHOST_DEFAULT_SPEED 2.
 
 // TO WRITE
-Direction decidePacman(const Map*, Pacman*, Action);
+Direction decidePacman(const Map* map, Pacman* pacman, Action action);
 
 // TO WRITE
-Direction decideGhost(const Map*, Ghost*, Pacman*, Ghost*);
+Direction decideGhost(const Map* map, const Ghost* ghost, const Pacman* pacman, const Ghost* blinky);
 Direction decideBlinky(const Map*, const Ghost*, const Pacman*);
 Direction decidePinky(const Map*, const Ghost*, const Pacman*);
 Direction decideInky(const Map*, const Ghost*, const Pacman*, const Ghost*);
