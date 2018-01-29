@@ -41,10 +41,22 @@ time.h
 /home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.c
 input.h
 /home/parsa/Desktop/Programming/FOP96/Pacman/src/input.h
+map.h
+/home/parsa/Desktop/Programming/FOP96/Pacman/src/map.h
 physics.h
 /home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.h
+float.h
+-
 stdio.h
 -
 time.h
+-
+stdlib.h
+-
+math.h
+-
+string.h
+-
+stdbool.h
 -
 

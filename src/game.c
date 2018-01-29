@@ -11,7 +11,7 @@
 void initiateGame(char* filename, Map* outMap, Game* outGame, Pacman* outPacman, Ghost* outGhosts)
 {
     srand(time(NULL));
-    FILE* file = fopen(filename, "r");
+    FILE* file = fopen("../res/map.txt", "r");
     fscanf(file, "%d%d", &outMap->height, &outMap->width);
     int i, j;
     outGame->cheeses = outGame->cherries = outGame->pineapples = 0;

@@ -1,0 +1,7 @@
+
+cd build
+rm Pacman 2> /dev/null
+cmake ..
+make
+./Pacman 2> /dev/null
+

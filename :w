@@ -49,6 +49,7 @@ Direction bfs(const Map* map, Node u, Node v)
 			temp.y = (temp.y - dy[i] + map->height) % map->height;
 		}
 		index++;
+		printf("hi there\n");
 	}
 	return par[u.x][u.y];
 }
@@ -80,24 +81,7 @@ Direction decideBlinky(const Map* map, const Ghost* ghost, const Pacman* pacman)
 
 Direction decidePinky(const Map* map, const Ghost* ghost, const Pacman* pacman)
 {
-	Node ghostPos, destPos; // destinationPos
-	ghostPos.x = toInt(ghost->x);
-	ghostPos.y = toInt(ghost->y);
-	destPos.x = toInt(pacman->x);
-	destPos.y = toInt(pacman->y);
-	int dx[5] = {0, 0, 1, 0, -1};
-	int dy[5] = {0, -1, 0, 1, 0};
-	int i;
-	for (i = 1; i <= 5; i++)
-	{
-		destPos.x = (destPos.x + dx[i] + map->width) % map->width;
-		destPos.y = (destPos.y + dy[i] + map->height) % map->height;
-		if (map->cells[destPos.x][destPos.y] == CELL_BLOCK)
-			break;
-	}
-	destPos.x = (destPos.x - dx[i] + map->width) % map->width;
-	destPos.y = (destPos.y - dy[i] + map->height) % map->height;
-	return bfs(map, ghostPos, destPos);
+	return DIR_NONE;
 }
 
 Direction decideInky(const Map* map, const Ghost* ghost, const Pacman* pacman, const Ghost* blinky)

@@ -25,6 +25,11 @@ typedef enum { BLINKY, PINKY, CLYDE, INKY } GhostType;
 
 typedef struct
 {
+	double x, y;
+} Point;
+
+typedef struct
+{
     int score;
     int cheeses, cherries, pineapples;
     int ghosts;
@@ -61,19 +66,10 @@ typedef struct
     double speed;
 } Ghost;
 
-// TO WRITE
 void initiateGame(char*, Map*, Game*, Pacman*, Ghost*);
-
-// TO WRITE
 void checkEatables(Map*, Game*, Pacman*, Ghost*);
-
-// TO WRITE
 void checkGhostCollision(Pacman*, Ghost*);
-
-// TO WRITE
 bool isGameFinished(Game*, Pacman*);
-
-// TO WRITE
 void checkGhostState(Ghost*);
 
 #endif
