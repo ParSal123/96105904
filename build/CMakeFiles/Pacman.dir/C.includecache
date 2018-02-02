@@ -9,18 +9,26 @@
 ../include/game.h
 stdbool.h
 -
+SDL2/SDL.h
+-
 map.h
 ../include/map.h
 
-../include/input.h
+../include/graphics.h
+game.h
+../include/game.h
+map.h
+../include/map.h
+SDL2/SDL.h
+-
 
 ../include/map.h
 
 ../include/physics.h
-input.h
-../include/input.h
 game.h
 ../include/game.h
+graphics.h
+../include/graphics.h
 
 /home/parsa/Desktop/Programming/FOP96/Pacman/src/game.c
 game.h
@@ -29,6 +37,8 @@ map.h
 /home/parsa/Desktop/Programming/FOP96/Pacman/src/map.h
 physics.h
 /home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.h
+graphics.h
+/home/parsa/Desktop/Programming/FOP96/Pacman/src/graphics.h
 math.h
 -
 stdio.h
@@ -38,9 +48,37 @@ stdlib.h
 time.h
 -
 
+/home/parsa/Desktop/Programming/FOP96/Pacman/src/graphics.c
+game.h
+/home/parsa/Desktop/Programming/FOP96/Pacman/src/game.h
+graphics.h
+/home/parsa/Desktop/Programming/FOP96/Pacman/src/graphics.h
+map.h
+/home/parsa/Desktop/Programming/FOP96/Pacman/src/map.h
+SDL2/SDL.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+/home/parsa/Desktop/Programming/FOP96/Pacman/src/main.c
+game.h
+/home/parsa/Desktop/Programming/FOP96/Pacman/src/game.h
+graphics.h
+/home/parsa/Desktop/Programming/FOP96/Pacman/src/graphics.h
+map.h
+/home/parsa/Desktop/Programming/FOP96/Pacman/src/map.h
+physics.h
+/home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.h
+SDL2/SDL.h
+-
+stdbool.h
+-
+
 /home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.c
-input.h
-/home/parsa/Desktop/Programming/FOP96/Pacman/src/input.h
+graphics.h
+/home/parsa/Desktop/Programming/FOP96/Pacman/src/graphics.h
 map.h
 /home/parsa/Desktop/Programming/FOP96/Pacman/src/map.h
 physics.h

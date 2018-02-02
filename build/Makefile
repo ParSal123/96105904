@@ -150,6 +150,60 @@ src/game.c.s:
 	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/src/game.c.s
 .PHONY : src/game.c.s
 
+src/graphics.o: src/graphics.c.o
+
+.PHONY : src/graphics.o
+
+# target to build an object file
+src/graphics.c.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/src/graphics.c.o
+.PHONY : src/graphics.c.o
+
+src/graphics.i: src/graphics.c.i
+
+.PHONY : src/graphics.i
+
+# target to preprocess a source file
+src/graphics.c.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/src/graphics.c.i
+.PHONY : src/graphics.c.i
+
+src/graphics.s: src/graphics.c.s
+
+.PHONY : src/graphics.s
+
+# target to generate assembly for a file
+src/graphics.c.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/src/graphics.c.s
+.PHONY : src/graphics.c.s
+
+src/main.o: src/main.c.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/Pacman.dir/build.make CMakeFiles/Pacman.dir/src/main.c.s
+.PHONY : src/main.c.s
+
 src/physics.o: src/physics.c.o
 
 .PHONY : src/physics.o
@@ -189,6 +243,12 @@ help:
 	@echo "... src/game.o"
 	@echo "... src/game.i"
 	@echo "... src/game.s"
+	@echo "... src/graphics.o"
+	@echo "... src/graphics.i"
+	@echo "... src/graphics.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... src/physics.o"
 	@echo "... src/physics.i"
 	@echo "... src/physics.s"

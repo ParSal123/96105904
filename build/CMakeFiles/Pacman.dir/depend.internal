@@ -3,13 +3,24 @@
 
 CMakeFiles/Pacman.dir/src/game.c.o
  ../include/game.h
- ../include/input.h
+ ../include/graphics.h
  ../include/map.h
  ../include/physics.h
  /home/parsa/Desktop/Programming/FOP96/Pacman/src/game.c
+CMakeFiles/Pacman.dir/src/graphics.c.o
+ ../include/game.h
+ ../include/graphics.h
+ ../include/map.h
+ /home/parsa/Desktop/Programming/FOP96/Pacman/src/graphics.c
+CMakeFiles/Pacman.dir/src/main.c.o
+ ../include/game.h
+ ../include/graphics.h
+ ../include/map.h
+ ../include/physics.h
+ /home/parsa/Desktop/Programming/FOP96/Pacman/src/main.c
 CMakeFiles/Pacman.dir/src/physics.c.o
  ../include/game.h
- ../include/input.h
+ ../include/graphics.h
  ../include/map.h
  ../include/physics.h
  /home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.c

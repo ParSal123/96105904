@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/parsa/Desktop/Programming/FOP96/Pacman/src/game.c" "/home/parsa/Desktop/Programming/FOP96/Pacman/build/CMakeFiles/Pacman.dir/src/game.c.o"
+  "/home/parsa/Desktop/Programming/FOP96/Pacman/src/graphics.c" "/home/parsa/Desktop/Programming/FOP96/Pacman/build/CMakeFiles/Pacman.dir/src/graphics.c.o"
+  "/home/parsa/Desktop/Programming/FOP96/Pacman/src/main.c" "/home/parsa/Desktop/Programming/FOP96/Pacman/build/CMakeFiles/Pacman.dir/src/main.c.o"
   "/home/parsa/Desktop/Programming/FOP96/Pacman/src/physics.c" "/home/parsa/Desktop/Programming/FOP96/Pacman/build/CMakeFiles/Pacman.dir/src/physics.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
